@@ -14,7 +14,7 @@ int main() {
     auto i = 1; // auto keyword
     decltype(i) j = i; // decltype keyword
     cout << i + j << endl;
-    vector<int> vec = {1, 2, 3, 4};
+    vector<int> vec={1, 2, 3, 4};
     for (vector<int>::size_type i = 0; i<vec.size(); ++i) {
         cout << ' ' << vec[i];
     }
