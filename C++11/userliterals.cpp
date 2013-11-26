@@ -17,7 +17,7 @@ constexpr complex<double> operator "" _i(long double d) { // imaginary literal
 	return complex<double>(0,2*d);	// complex is a literal type
 }
 
-constexpr string operator "" _p(const char* str, size_t len) {
+string operator "" _p(const char* str, size_t len) {
 	return string(str, len);
 }
 
