@@ -1,9 +1,8 @@
-CXX = g++
+CXX = /opt/bin/clang++
 
-CXXFLAGS = -O3 -Wall -fmessage-length=0 
+CXXFLAGS = -v -g -O3 -Wall -fmessage-length=0 -nostdinc++ -std=c++11 -I /opt/include/c++/v1
 
-
-LDFLAGS =
+LDFLAGS = -stdlib=libc++ -L /opt/lib
 
 LIBS =
 
@@ -23,14 +22,6 @@ clean:
 %: %.cpp
 	if [ -f $@ ]; then rm -f $@; fi
 	${CXX} ${CXXFLAGS} $(LDFLAGS) -o $@ $<
-
-printrbtree: printrbtree.cpp redblacktree.hpp
-	if [ -f $@ ]; then rm -f $@; fi
-	${CXX} ${CXXFLAGS} $(LDFLAGS) -o $@ $<
-
-rbtree: rbtree.cpp redblacktree.hpp
-	if [ -f $@ ]; then rm -f $@; fi
-	${CXX} ${CXXFLAGS} $(LDFLAGS) -o $@ $<	
 
 %.o: %.cc
 	if [ -f $@ ]; then rm -f $@; fi

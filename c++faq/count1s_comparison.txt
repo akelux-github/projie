@@ -1,0 +1,19 @@
+1.
+time ./count1s_recursive 
+
+1111111110
+
+real    137m47.881s
+user    137m45.617s
+sys 0m0.568s
+
+2.
+time ./a.out
+
+1111111110
+
+real    59m24.154s
+user    59m23.375s
+sys 0m0.204s
+
+3. Naive version >= 600 min

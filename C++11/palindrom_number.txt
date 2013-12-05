@@ -1,0 +1,7 @@
+1. time ./palindrom_norec  10000000000
+
+real    36m14.558s
+user    36m14.252s
+sys 0m0.000s
+
+2. recursive version takes only 4 mins

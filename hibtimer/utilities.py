@@ -41,7 +41,9 @@ import time
 
 def get_sleeptime(at):
     t1 = time.strptime(at, '%H:%M')
+    
     t2 = time.localtime()
+    
     
 def run(at_time = '22:00' ): # need admin previlidge, run at_time every day
     from msgaction import showMsgActions
